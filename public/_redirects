@@ -1,8 +1,10 @@
 # These rules will change if you change your site’s custom domains or HTTPS settings
-
 # Redirect domain aliases to primary domain
 https://marantz.dev/* https://josh.marantz.dev/:splat 301!
 https://www.marantz.dev/* https://josh.marantz.dev/:splat 301!
 
-# Optional: Redirect default Netlify subdomain to primary domain
+# Redirect default Netlify subdomain to primary domain
 https://elastic-bohr-fe9784.netlify.com/* https://josh.marantz.dev/:splat 301!
+
+# Always serve index.html because SPA
+/*    /index.html   200
