@@ -1,9 +1,13 @@
-import React, { Component } from "react";
+import * as React from "react";
+import { Router } from "@reach/router";
+import { Homepage } from "./Homepage";
 
-class App extends Component {
-  render() {
-    return <div>Hi this is my site do you like it :)</div>;
-  }
+function App() {
+  return (
+    <Router>
+      <Homepage path="/" />
+    </Router>
+  );
 }
 
 export default App;
