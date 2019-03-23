@@ -1,8 +1,10 @@
 import * as React from "react";
 import { Router } from "@reach/router";
 import { SkipNavContent, SkipNavLink } from "@reach/skip-nav";
-import { Homepage } from "./Homepage";
+import "@reach/skip-nav/styles.css";
 import "./primitive/scss/main.scss";
+
+import { Homepage } from "./Homepage";
 
 function App() {
   return (

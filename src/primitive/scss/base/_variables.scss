@@ -40,13 +40,15 @@ $font-style: normal;
 $font-variant: normal;
 $font-weight: normal;
 $font-color: #404040;
-$font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+$font-family: Inter, -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+$variable-font-family: Inter var, $font-family;
 $line-height: 1.6;
 
 // Headings
 $heading-font-color: #404040;
 $heading-font-weight: 600;
-$heading-font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+$heading-font-family: Inter, -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+$variable-heading-font-family: Inter var, $font-family;
 $heading-line-height: 1.2;
 
 // Mobile heading font size

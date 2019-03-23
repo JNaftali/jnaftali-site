@@ -2,11 +2,16 @@
   =============== */
 
 // HTML base
-html {
+  @import url('https://rsms.me/inter/inter.css');
+  html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font: $font-style $font-variant $font-weight #{$font-size}/#{$line-height} $font-family;
     font-size: $font-size;
+
+    @supports (font-variation-settings: normal) {
+        font-family: $variable-font-family;
+    }
 }
 
 // Body base
@@ -46,6 +51,10 @@ h5 {
     color: $heading-font-color;
     &:not(:first-child) {
         margin: 1.5rem 0;
+    }
+
+    @supports (font-variation-settings: normal) {
+        font-family: $variable-heading-font-family;
     }
 }
 
